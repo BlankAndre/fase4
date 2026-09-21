@@ -14,7 +14,7 @@ int mnumberAin(){
     result = sum(numberA,numberB);
     printf("\nSum: %d", result);
 
-    result = subtract(numberA,numberB);
+    subtract(numberA,numberB);
     printf("\nSubtrnumberAction: %d", result);
 
     result = multiplication(numberA,numberB);
