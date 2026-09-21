@@ -41,7 +41,7 @@ float multiplication(float numberA, float numberB){
         return numberA * numberB;
     }else{
         printf("\nThe numbers given for multiplication will result in infinite number");
-        return 1;
+        return 0;
     }
 }
 
