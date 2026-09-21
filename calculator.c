@@ -35,7 +35,7 @@ float subtract(float numberA, float numberB){
     return numberA - numberB;
 }
 float multiplication(float numberA, float numberB){
-    return numberA * numberB;
+    return numberA * numberB + 1;
 }
 
 float divide(float numberA, float numberB){
