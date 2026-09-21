@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
+#include <math.h>
 
 float sum(float numberA, float numberB);
 float subtract(float numberA, float numberB);
@@ -34,8 +35,14 @@ float sum(float numberA, float numberB){
 float subtract(float numberA, float numberB){
     return numberA - numberB;
 }
+
 float multiplication(float numberA, float numberB){
-    return numberA * numberB;
+    if(isinf(numberA * numberB) == 0){
+        return numberA * numberB;
+    }else{
+        printf("\nThe numbers given for multiplication will result in infinite number");
+        return 1;
+    }
 }
 
 float divide(float numberA, float numberB){
