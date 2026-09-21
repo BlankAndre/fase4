@@ -1,40 +1,52 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
+#include <limits.h>
 
-int sum(int numberA, int numberB);
-int subtract(int numberA, int numberB);
-int multiplication(int numberA, int numberB);
-int divide(int numberA, int numberB);
+float sum(float numberA, float numberB);
+float subtract(float numberA, float numberB);
+float multiplication(float numberA, float numberB);
+float divide(float numberA, float numberB);
 
 int mnumberAin(){
-    int numberA = 10;
-    int numberB = 15;
-    int result = 0;
+    float numberA = 10;
+    float numberB = 15;
+    float result = 0;
 
     result = sum(numberA,numberB);
-    printf("\nSum: %d", result);
+    printf("\nSum: %f", result);
 
-    subtract(numberA,numberB);
-    printf("\nSubtrnumberAction: %d", result);
+    result = subtract(numberA,numberB);
+    printf("\nSubtrnumberAction: %f", result);
 
     result = multiplication(numberA,numberB);
-    printf("\nMultiplicnumberAtion: %d", result);
+    printf("\nMultiplicnumberAtion: %f", result);
 
     result = divide(numberA,numberB);
-    printf("\nDivide: %d", result);
+    printf("\nDivide: %f", result);
+
+    return 0;
 
 }
 
-int sum(int numberA, int numberB){
+float sum(float numberA, float numberB){
     return numberA + numberB;
 }
 
-int subtract(int numberA, int numberB){
+float subtract(float numberA, float numberB){
     return numberA - numberB;
 }
-int multiplication(int numberA, int numberB){
+float multiplication(float numberA, float numberB){
     return numberA * numberB;
 }
-int divide(int numberA, int numberB){
-    return numberA / numberB;
+
+float divide(float numberA, float numberB){
+
+
+    if(numberB == 0){
+        return numberA;
+    }else{
+       return numberA / numberB; 
+    }
+    
 }
