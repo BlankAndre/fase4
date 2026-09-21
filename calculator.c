@@ -39,11 +39,5 @@ float multiplication(float numberA, float numberB){
 }
 
 float divide(float numberA, float numberB){
-    
-    if(numberB == 0){
-        return numberA;
-    }else{
-       return numberA / numberB; 
-    }
-    
+    return numberA / numberB; 
 }
