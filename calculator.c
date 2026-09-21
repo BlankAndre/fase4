@@ -1,14 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
-#include <limits.h>
 
 float sum(float numberA, float numberB);
 float subtract(float numberA, float numberB);
 float multiplication(float numberA, float numberB);
 float divide(float numberA, float numberB);
 
-int mnumberAin(){
+int main(){
     float numberA = 10;
     float numberB = 15;
     float result = 0;
@@ -24,7 +23,6 @@ int mnumberAin(){
 
     result = divide(numberA,numberB);
     printf("\nDivide: %f", result);
-
     return 0;
 
 }
@@ -41,8 +39,7 @@ float multiplication(float numberA, float numberB){
 }
 
 float divide(float numberA, float numberB){
-
-
+    
     if(numberB == 0){
         return numberA;
     }else{
