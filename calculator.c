@@ -11,16 +11,16 @@ int mnumberAin(){
     int numberB = 15;
     int result = 0;
 
-    sum(numberA,numberB);
+    result = sum(numberA,numberB);
     printf("\nSum: %d", result);
 
-    subtract(numberA,numberB);
+    result = subtract(numberA,numberB);
     printf("\nSubtrnumberAction: %d", result);
 
-    multiplication(numberA,numberB);
+    result = multiplication(numberA,numberB);
     printf("\nMultiplicnumberAtion: %d", result);
 
-    divide(numberA,numberB);
+    result = divide(numberA,numberB);
     printf("\nDivide: %d", result);
 
 }
